@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Guessing Game</title>
+  
+<Style>
+body{text-align:center;}
+
+
+
+input#userInput{font-size:18px}
+
+
+
+
+@media screen and (max-width:480px){
+	body{
+		background:white;
+		padding:10px;
+		margin:10px;
+		width:450px;
+		height:450px;
+		}
+	header{
+		border: 2px dashed black;
+		
+	
+		
+		
+	}
+    
+}
+
+
+
+ @media only screen and (min-width:481px) and (max-width:1024px) {
+        body {
+            background:black; 
+			color:white;
+        }
+    }
+
+ @media only screen and (min-width:1025px) {
+        body {
+            background-color: aqua;
+			border: 2px solid black;
+        }
+			
+	}
+		
+  
+</style>
+ 
+
+</head>
+<body>
+
+<header>
+<script src="js/scripts.js"></script>
+ 
+<p id="output">Guess the number between 1-20</p>
+
+
+<p id="guesses">5 attempt(s) left</p>
+
+<p id="start">
+<input id="test" type="button" value="Click to have me think of a number" onClick="compNumber.think();" />
+</p>
+
+<p id="submit"></p>
+
+<p id="next"></p>
+
+
+</header>
+
+<p id="picture">   </p>
+
+</body>
+</html>
